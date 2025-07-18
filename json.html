@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IESTP ESPINAR</title>
+    <link rel="stylesheet" href="css/estilos-json.css">
+</head>
+<body>
+
+         <!-- institución -->
+     <div id="institucion-boxs">
+       <h3 id="institucion"></h3>
+     </div>
+
+     <!-- Emcabezado -->
+     <div class="info-general">
+          <h3 id="pc"></h3>
+          <h3 id="alumno"></h3>
+          <h3 id="ud"></h3>
+     </div>
+          
+
+    <!-- ALUMNOS -->
+    <h4>Estudiantes</h4>
+    <table id="tabla-alumnos" border="1">
+        <thead>
+            <tr>
+                <th>DNI</th>
+                <th>NOMBRE</th>
+                <th>APELLIDO</th>
+                <th>EDAD</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- CURSOS -->
+    <h4>Cursos</h4>
+    <table id="tabla-cursos" border="1">
+        <thead>
+            <tr>
+                <th>ID CURSO</th>
+                <th>NOMBRE</th>
+                <th>N° HORAS</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- DOCENTES -->
+    <h4>Docentes</h4>
+    <table id="tabla-docentes" border="1">
+        <thead>
+            <tr>
+                <th>DNI</th>
+                <th>NOMBRE</th>
+                <th>APELLIDO</th>
+                <th>CURSO</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="js-json/jquery.js"></script>
+    <script src="js-json/app.js"></script>
+    <script src="js-json/alumnos.js"></script>
+    <script src="js-json/cursos.js"></script>
+    <script src="js-json/docentes.js"></script>
+</body>
+</html>

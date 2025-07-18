@@ -1,0 +1,76 @@
+/* Fondo general con efecto rosa futurista */
+body {
+  background: linear-gradient(135deg, #0a001a, #33001a); /* negro con rosa oscuro */
+  color: #ffe6f0;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Tarjetas futuristas */
+.card {
+  background: linear-gradient(145deg, #1f0010, #33001f); /* fondo negro-rosado oscuro */
+  border: 1px solid #ff66b2; /* rosa neón suave */
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(255, 105, 180, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #ffccdf;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(255, 105, 180, 0.35);
+}
+
+/* Títulos */
+.card h5 {
+  font-weight: 700;
+  color: #ff99cc;
+  text-shadow: 0 1px 2px #000;
+}
+
+/* Inputs */
+.form-control {
+  background-color: #1a0014; /* negro con tono rosado */
+  color: #ffe0f0;
+  border: 1px solid #ff80bf;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.form-control::placeholder {
+  color: #ffb3d9;
+  opacity: 0.7;
+}
+
+.form-control:focus {
+  background-color: #2a001f;
+  border-color: #ff4da6;
+  box-shadow: 0 0 0 0.2rem rgba(255, 77, 166, 0.25);
+  color: #ffffff;
+}
+
+/* Botones personalizados */
+.btn-consulta {
+  background: linear-gradient(90deg, #ff4da6, #ff66cc);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 16px;
+  transition: transform 0.2s ease, background 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 51, 153, 0.3);
+}
+
+.btn-consulta:hover {
+  background: linear-gradient(90deg, #e60073, #cc3399);
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(255, 51, 153, 0.5);
+}
+
+/* Ajustes responsivos */
+@media (max-width: 767px) {
+  .card {
+    margin-bottom: 20px;
+  }
+}

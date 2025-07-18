@@ -1,0 +1,75 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 30px;
+  background-color: #fff9fb;
+  color: #4a4a4a;
+}
+#institucion-box {
+  text-align: center;
+  background-color: #ffe0f0;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#institucion {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  background-color: #ffe0f0; /* 🌸 solo este tiene fondo */
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2, h3 {
+  color: #c44569;
+  margin: 10px 0;
+}
+
+h4 {
+  color: #c44569;
+  margin: 30px 0 10px 0;
+  text-align: left;
+  padding-left: 10px;
+}
+
+/* 📏 Ajuste de tamaño general de las tablas */
+table {
+  border-collapse: collapse;
+  margin: 0 auto 40px auto;
+  width: 80%;         /* 💡 ancho controlado */
+  max-width: 1000px;  /* 💡 no se pasa de ese límite */
+  font-size: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* ✨ Columnas específicas (opcional, personaliza por número) */
+th:nth-child(2),
+td:nth-child(2) {
+  width: 200px; /* ancho mayor para el campo NOMBRE */
+}
+
+th, td {
+  border: 1px solid #e0e0e0;
+  padding: 10px 16px;
+  text-align: center;
+}
+
+th {
+  background-color: #f78fb3;
+  color: white;
+}
+
+td {
+  background-color: #fffafc;
+}
+
+.info-general h2, .info-general h3 {
+  margin: 5px 0;
+}

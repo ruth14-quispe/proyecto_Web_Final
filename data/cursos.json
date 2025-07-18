@@ -1,0 +1,5 @@
+[
+  { "id_curso": "C001", "nombre": "OFIMÁTICA", "horas": 4 },
+  { "id_curso": "C002", "nombre": "PROGRAMACIÓN", "horas": 6 },
+  { "id_curso": "C003", "nombre": "INGLÉS", "horas": 3 }
+]

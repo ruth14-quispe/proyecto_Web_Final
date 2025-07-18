@@ -1,0 +1,81 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f3e5f5; /* lila claro */
+    padding: 10px;
+    margin: 0;
+}
+.cuadro-encabezado {
+    width: 60%;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #ede7f6; /* lavanda muy claro */
+    border: 2px solid #7e57c2; /* borde púrpura */
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4a148c; /* púrpura oscuro */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+h2, h3 {
+    text-align: center;
+    color: #6a1b9a; /* púrpura oscuro */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.encabezado-tabla {
+    width: 60%;
+    margin: 0 auto 30px auto;
+    border-collapse: collapse;
+    background-color: #ede7f6; /* lavanda muy claro */
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid #7e57c2;
+}
+
+.encabezado-tabla td {
+    padding: 15px;
+    color: #4a148c;
+}
+
+table {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #d6c2f4; /* lavanda claro */
+    font-size: 14px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #d1c4e9; /* borde lavanda */
+}
+
+th {
+    background-color: #7e57c2; /* púrpura medio */
+    color: white;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f3e5f5; /* lila claro */
+}
+
+tr:hover {
+    background-color: pink; /* lavanda más fuerte al pasar el mouse */
+}
+
+

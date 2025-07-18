@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bienvenida</title>
+  <style>
+    
+    body {
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  background: linear-gradient(to right, #ffb6f9, #b39ddb); /* rosa y violeta brillante */
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  color: #222; /* color de texto más oscuro para mejor contraste */
+}
+
+h1 {
+  font-size: 36px;
+  color: #8e24aa; /* violeta vibrante */
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 24px;
+  color: #ad1457; /* rosa fuerte */
+  margin-top: 50px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#foto {
+  border-radius: 50%;
+  width: 130px;
+  margin: 15px 0;
+  box-shadow: 0 4px 12px rgba(142, 36, 170, 0.3);
+}
+
+.tabla-titulo {
+  width: 95%;
+  max-width: 1200px;
+  margin: 30px auto;
+  background-color: #fdf3ff; /* fondo suave con tono lila */
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(173, 20, 87, 0.15);
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.tabla-titulo td {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 12px 0;
+  color: #4a004d;
+  border: none;
+}
+
+table {
+  width: 95%;
+  max-width: 1000px;
+  margin: 30px auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(173, 20, 87, 0.08);
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #ab47bc; /* violeta brillante */
+  color: white;
+  padding: 14px;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+td {
+  padding: 12px;
+  font-size: 16px;
+  color: #444;
+  border-bottom: 1px solid #f3e5f5;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover {
+  background-color: #fce4ec; /* rosa pastel claro */
+  transition: background 0.3s;
+}
+
+/* Botones rosa-violeta brillantes */
+.botones {
+  margin: 30px 0;
+}
+
+.boton-rosita {
+  display: inline-block;
+  background: linear-gradient(to right, #ec407a, #ba68c8); /* rosa fuerte a violeta */
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 14px 28px;
+  margin: 10px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 4px 12px rgba(186, 104, 200, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.boton-rosita:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(186, 104, 200, 0.5);
+}
+
+  </style>
+</head>
+<body>
+  <h1>Bienvenido/a</h1>
+
+  <p id="nombre"></p>
+  <p id="email"></p>
+  <img id="foto" alt="Foto de perfil" />
+
+  <script>
+    const nombre = localStorage.getItem("nombre");
+    const email = localStorage.getItem("email");
+    const foto = localStorage.getItem("foto");
+
+    document.getElementById("nombre").innerText = "Nombre: " + nombre;
+    document.getElementById("email").innerText = "Correo: " + email;
+    document.getElementById("foto").src = foto;
+  </script>
+
+ 
+
+  <!-- Botones futuristas rosita -->
+  <div class="botones">
+    <a href="xml.html" class="boton-rosita">Práctica Calificada 1 XML</a>
+    <a href="json.html" class="boton-rosita">Práctica Calificada 2 JSON</a>
+    <a href="consulta.html" class="boton-rosita">Práctica Calificada Consulta</a>
+  </div>
+  <script src="js/jquery.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
